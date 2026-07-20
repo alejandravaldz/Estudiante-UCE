@@ -52,6 +52,6 @@ for (int i = 1; i <= cantidad; i++)
     Console.WriteLine();
     Console.WriteLine($"El promedio de sus calificaciones es: {promedio}");
     Console.WriteLine($"status: {statatus}");
-    
+    Console.WriteLine();
 }
 
