@@ -1,11 +1,10 @@
 # 📘 Proyecto: Registro de Calificaciones en C#
 
 ## 📌 Descripción
-Este programa en C# permite:
-- Registrar las calificaciones de varios estudiantes.
-- Almacenarlas en una lista.
-- Calcular el promedio general.
-- Imprimir en pantalla el listado con **nombre y calificación**, junto con el promedio final.
+Este programa en C# permite registrar las calificaciones de varios estudiantes.  
+El usuario ingresa la cantidad de estudiantes, luego el nombre de cada uno y sus 4 calificaciones.  
+El sistema calcula el promedio y determina si el estudiante **aprobó** o **reprobó** la materia.  
+El resultado se muestra directamente en consola, con un formato sencillo y claro.
 
 ---
 
@@ -34,6 +33,6 @@ Este programa en C# permite:
 ---
 
 ## 🖼️ Captura de Ejecución
-<img width="1838" height="574" alt="Captura de pantalla 2026-07-19 003106" src="https://github.com/user-attachments/assets/7552e24e-8c0c-4937-8c48-a1df047bc178" />
+<img width="1600" height="957" alt="WhatsApp Image 2026-07-19 at 10 11 52 PM" src="https://github.com/user-attachments/assets/677a33db-0347-4a8e-9bbb-b35e7aa0b813" />
 
 
