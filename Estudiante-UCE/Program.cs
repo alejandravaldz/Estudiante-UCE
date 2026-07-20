@@ -5,9 +5,9 @@ using System.ComponentModel;
 Console.WriteLine("Registro de Calificaciones");
 Console.WriteLine();
 Console.Write("Ingrese la cantidad de estudiante: ");
-int cantidadEstudiantes = int.Parse(Console.ReadLine());
+int cantidad = int.Parse(Console.ReadLine());
 
-for (int i = 1; i <= cantidadEstudiantes; i++)
+for (int i = 1; i <= cantidad; i++)
 {
     Console.Write($"Ingrese el nombre del estudiante {i}: ");
     string nombre = Console.ReadLine();
