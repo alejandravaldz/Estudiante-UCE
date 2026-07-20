@@ -1,57 +1,57 @@
 ﻿
 using System.ComponentModel;
 
+
 Console.WriteLine("Registro de Calificaciones");
-
-
-Console.Write("Ingrese el nombre del estudiante: ");
-string nombreEstudiante = Console.ReadLine();
-
-List<int> Calificaciones = new List<int>();
-
-
-
-for (int i = 1; i <= 4; i++)
-{
-    Console.Write($"Ingrese la calificación: ");
-    int calificacion = int.Parse(Console.ReadLine());
-    Calificaciones.Add(calificacion);
-}
-
 Console.WriteLine();
-Console.WriteLine($"Estudiante: {nombreEstudiante}");
-Console.WriteLine("Calificaciones:");
+Console.Write("Ingrese la cantidad de estudiante: ");
+int cantidadEstudiantes = int.Parse(Console.ReadLine());
 
-
-
-
-
-// Mostrar listado de calificaciones
-
-foreach (int c in Calificaciones)
+for (int i = 1; i <= cantidadEstudiantes; i++)
 {
-    Console.WriteLine($" {c}");
+    Console.Write($"Ingrese el nombre del estudiante {i}: ");
+    string nombre = Console.ReadLine();
+
+    List<int> calificacion = new List<int>();
+    for (int m = 1; m <= 4; m++)
+    {
+        Console.Write("Ingrese la calificación: ");
+        int nota = int.Parse(Console.ReadLine());
+        calificacion.Add(nota);
+    }
+
+    Console.WriteLine();
+    Console.WriteLine($"Estudiante: {nombre}");
+    Console.WriteLine("Calificaciones:");
+    foreach (int c in calificacion)
+    {
+        Console.WriteLine($" {c}");
+    }
+
+    int suma = 0;
+    foreach (int c in calificacion)
+    {
+        suma += c;
+    }
+    double promedio = (double)suma / calificacion.Count;
+
+
+    string statatus;
+
+    if (promedio >= 70)
+    {
+        statatus = "Aprobado";
+
+    }
+    else
+    {
+        statatus = "Reprobado";
+
+    }
+
+    Console.WriteLine();
+    Console.WriteLine($"El promedio de sus calificaciones es: {promedio}");
+    Console.WriteLine($"status: {statatus}");
+    
 }
-
-
-
-
-//Calcular y mostrar el promedio
-
-int suma = 0;
-foreach (int c in Calificaciones)
-{
-    suma += c;
-}
-
-
-int promedio = suma / Calificaciones.Count;
-
-Console.WriteLine();
-Console.WriteLine($"El promedio de sus calificaciones es: {promedio}");
-        
-
-
-
-
 
